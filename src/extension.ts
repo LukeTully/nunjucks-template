@@ -45,7 +45,7 @@ const prettyDiff = (document, range, options) => {
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.languages.registerDocumentFormattingEditProvider('njk', {
+    vscode.languages.registerDocumentFormattingEditProvider('jinja', {
       provideDocumentFormattingEdits(document, options, token) {
         // entire contnets
         const start = new vscode.Position(0, 0);
